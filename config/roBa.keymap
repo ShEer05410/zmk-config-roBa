@@ -48,7 +48,7 @@
 
         tick = <10>;
         wait-ms = <5>;
-        tap-ms = <5>;　　
+        tap-ms = <5>;
     };
 };
 
