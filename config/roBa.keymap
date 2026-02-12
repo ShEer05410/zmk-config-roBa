@@ -109,6 +109,13 @@
 
             tap-ms = <20>;
         };
+
+        encoder_scroll_v: encoder_scroll_v {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_SCROLL_V";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+        };
     };
 
     keymap {
@@ -122,7 +129,7 @@
 &mt LEFT_CONTROL TAB  &kp LEFT_COMMAND  &lt 2 LANGUAGE_2  &kp SPACE  &lt 1 LANGUAGE_1  &mo 3          &kp BACKSPACE     &kp ENTER                             &mt RIGHT_SHIFT ESCAPE
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&encoder_scroll_v>;
         };
 
         NUM+FUNC {
