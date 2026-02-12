@@ -130,7 +130,7 @@
 &mt LEFT_CONTROL TAB  &kp LEFT_COMMAND  &lt 2 LANGUAGE_2  &kp SPACE  &lt 1 LANGUAGE_1  &mo 3          &kp BACKSPACE     &kp ENTER                             &mt RIGHT_SHIFT ESCAPE
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         NUM+FUNC {
